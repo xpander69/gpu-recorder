@@ -2,5 +2,5 @@
 # uses pkill
 # by xpander
 
-# sigquit recording
-pkill -3 gpu-scree-reco
+# siginit recording
+pkill -2 gpu-scree-reco
