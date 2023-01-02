@@ -25,7 +25,7 @@ filename="`$DATE +%d%m%Y_%H.%M.%S`.$container"
 ntime=1000 # in milliseconds
 
 # Send notification for recording start
-notify-send -t $ntime --icon="nvidia" "GPU-Recorder" "Recording started" 	
+notify-send -t $ntime --urgency=critical --icon="nvidia" "GPU-Recorder" "Recording started" 	
 
 # Work starts here:
 # option -f records specified display
@@ -48,6 +48,6 @@ fi
 # Send finishing notification after file checking
 cd $location
 if ls -f "$filename";
-then notify-send -t $ntime --icon="nvidia" "GPU-Recorder" "Recording finished";
-else notify-send -t $ntime --icon=error "Error" "Failed to Create the file";
+then notify-send -t $ntime --urgency=critical --icon="nvidia" "GPU-Recorder" "Recording finished";
+else notify-send -t $ntime --urgency=critical --icon=error "Error" "Failed to Create the file";
 fi
