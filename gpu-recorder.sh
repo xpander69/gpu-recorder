@@ -11,7 +11,7 @@ replaybuffer="180" # in seconds
 areasize="1920x1080"
 container="mp4"
 framerate="60"
-quality="very_high"
+quality="ultra" #options 'medium', 'high', 'very_high' or 'ultra'
 audio="alsa_output.usb-Focusrite_Scarlett_2i2_USB-00.analog-stereo.monitor"
 
 # Date function
